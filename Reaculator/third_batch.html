@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What you want to find?</title>
+    <style>
+        /* CSS to style the layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(201, 171, 212);
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 50px; /* Add margin below the heading */
+        }
+
+        .button-container {
+            text-align: center; /* Center-align container content */
+        }
+        
+        .button-container button {
+            font-size: 40px; /* Reduce font size for better proportion */
+            padding: 10px 20px; /* Adjust padding */
+            margin: 20px auto; /* Center-align buttons and add space between them */
+            display: block; /* Display buttons as block elements */
+            background-color: #ebd291; /* Green */
+            border: none;
+            color: rgb(53, 40, 40);
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .button-container button:hover {
+            background-color: #c8dbf3; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+    <h1>What you want to find?</h1>
+    <div class="button-container">
+        <button class="button" onclick="redirectToPage('fourth_batch.html')">Conversion</button>
+        <button onclick="showYield()">Yield</button>
+        <button onclick="showSelectivity()">Selectivity</button>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+
+        function showYield() {
+            // Your code for handling yield button click
+            console.log("Yield button clicked");
+        }
+
+        function showSelectivity() {
+            // Your code for handling selectivity button click
+            console.log("Selectivity button clicked");
+        }
+    </script>
+</body>
+</html>

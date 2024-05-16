@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reactor Calculator</title>
+
+<style>
+    body {
+        background-color: #e7ccf1; /* black background */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px; /* space between content and border */
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 50px; /* reduced font size */
+        margin-top: 10px; /* Adjust top margin as needed */
+        margin-bottom: 20px; /* Adjust bottom margin as needed */
+        color: #110d0d; /* white color */
+        font-family: Algerian, sans-serif; /* Algerian font */
+    }
+
+    h2 {
+        font-size: 30px; /* reduced font size */
+        margin-top: 20px; /* Adjust top margin as needed */
+        margin-bottom: 20px; /* Adjust bottom margin as needed */
+        color: #5e3535; /* white color */
+    }
+    
+    .button {
+        background-color: #ffffff; /* light blue color */
+        color: #000;
+        padding: 20px 40px; /* reduced padding */
+        font-size: 24px; /* increased font size */
+        border: 5px solid #876fae; /* grey border */
+        border-radius: 40px; /* rounder edges */
+        cursor: pointer;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(118, 89, 89, 0.1); /* shadow */
+        text-decoration: none; /* remove underline */
+    }
+
+    .button img {
+        margin-left: 10px; /* Added margin between image and text */
+        border-radius: 5%; /* Make the image circular */
+        width: 130px; /* Adjust the size of the circular image */
+        height: 100px; /* Adjust the size of the circular image */
+    }
+    
+    .button:hover {
+        background-color: #9fdcf0;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; /* Add some margin between button rows */
+    }
+
+    .button-row.side-by-side {
+        justify-content: space-around; /* Distribute buttons evenly */
+    }
+
+    .animation-container {
+        width: 1200px; /* Adjust according to your animation size */
+        height: 400px; /* Adjust according to your animation size */
+        margin: 0 auto 20px; /* Center the animation and add bottom margin */
+    }
+</style>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+</head>
+<body>
+
+<h1>REACTOR CALCULATOR</h1>
+
+<div class="animation-container" id="lottie-animation"></div>
+
+<h2>Choose the Reactor</h2>
+
+<div class="button-row side-by-side">
+    <a href="second_batch.html" class="button">𝑩𝒂𝒕𝒄𝒉 𝑹𝒆𝒂𝒄𝒕𝒐𝒓 <img src="11.png" alt="Batch Reactor Image"></a>
+    <a href="second_cstr.html" class="button">𝑪𝒐𝒏𝒕𝒊𝒏𝒖𝒐𝒖𝒔 𝑺𝒕𝒊𝒓𝒓𝒆𝒅-𝒕𝒂𝒏𝒌 𝑹𝒆𝒂𝒄𝒕𝒐𝒓 (𝑪𝑺𝑻𝑹) <img src="22.png" alt="CSTR Image"></a>
+</div>
+
+<div class="button-row side-by-side">
+    <a href="second_pfr.html" class="button">𝑷𝒍𝒖𝒈 𝑭𝒍𝒐𝒘 𝑹𝒆𝒂𝒄𝒕𝒐𝒓 (𝑷𝑭𝑹) <img src="33.png" alt="PFR Image"></a>
+    <a href="second_pbr.html" class="button">𝑷𝒂𝒄𝒌𝒆𝒅 𝑩𝒆𝒅 𝑹𝒆𝒂𝒄𝒕𝒐𝒓 (𝑷𝑩𝑹) <img src="44.png" alt="PBR Image"></a>
+</div>
+
+<script>
+    // Replace 'your_animation.json' with the path to your Lottie animation JSON file
+    const animation = bodymovin.loadAnimation({
+        container: document.getElementById('lottie-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://lottie.host/72623bea-e74a-41ef-a556-bc31e4dc2870/FJawsqHUDw.json' // Path to your Lottie animation JSON file
+    });
+</script>
+
+</body>
+</html>
